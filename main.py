@@ -23,23 +23,25 @@ def extract_colors(filename, num):
     return rgb_colors
 
 
-te.setheading(230)
-te.forward(300)
-te.setheading(0)
+def make_painting(num_dots):
+    te.setheading(230)
+    te.forward(300)
+    te.setheading(0)
 
-spots_num = 100
-for dot in range(1, spots_num+1):
-    color_list = extract_colors('hirst.jpg', 36)
-    te.dot(20, random.choice(color_list))
-    te.forward(50)
-
-    if dot % 10 == 0:
-        te.setheading(90)
+    spots_num = num_dots
+    for dot in range(1, spots_num+1):
+        color_list = extract_colors('hirst.jpg', 36)
+        te.dot(20, random.choice(color_list))
         te.forward(50)
-        te.setheading(180)
-        te.forward(500)
-        te.setheading(0)
+
+        if dot % 10 == 0:
+            te.setheading(90)
+            te.forward(50)
+            te.setheading(180)
+            te.forward(500)
+            te.setheading(0)
 
 
+# make_painting(150)
 screen = turtle.Screen()
 screen.exitonclick()
