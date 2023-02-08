@@ -1,2 +1,2 @@
 # Million_dollar-Hirst-Painting
-Creates Colored Palette like the very valuable Hirst Apainting using the colorgram and turtle pacakages
+Creates Colored Palette like the very valuable Hirst paintings using the colorgram and turtle pacakages
